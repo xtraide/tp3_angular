@@ -1,0 +1,27 @@
+<img src="/assets/88-2339275232.jpg" alt="" width="300px" height="auto">
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>nom/prenom</th>
+            <th>Adresse</th>
+            <th>Courier</th>
+        </tr>
+    </thead>
+    <tbody>
+        <!-- FILEPATH: /D:/setup-luncher/app/wamp64/www/iut/tp8/app-scol/src/app/components/etudiants-paris/etudiants-paris.component.html -->
+        <!-- BEGIN: ed8c6549bwf9 -->
+        <tr *ngFor="let etudiant of etudiants">
+
+            <td>{{etudiant.nom}} {{etudiant.prenom}}</td>
+            <td>{{etudiant.rue}} {{etudiant.cp}} {{etudiant.ville}}</td>
+            <td>{{etudiant.courriel}}</td>
+
+        </tr>
+        <!-- END: ed8c6549bwf9 -->
+
+
+    </tbody>
+</table>
+<div class="card">
+    <app-form-etudiant></app-form-etudiant>
+</div>

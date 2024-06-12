@@ -1,0 +1,19 @@
+<img src="/assets/Quel-métier-choisir-1086351949.jpg" alt="" width="300px" height="auto">
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th> ID</th>
+            <th>libelle</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let specialite of specialites">
+            <td>{{specialite.idSpec}}</td>
+            <td>{{specialite.libelle}}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="card">
+    <app-form-specialite></app-form-specialite>
+</div>

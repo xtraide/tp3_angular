@@ -1,0 +1,21 @@
+<img src="/assets/AdobeStock_48536364.jpeg" alt="" width="300px" height="auto">
+
+<table class="table table-bordered">
+    <thead>
+        <tr>
+            <th>nom/prenom</th>
+            <th>Adresse</th>
+            <th>Courier</th>
+        </tr>
+    </thead>
+    <tbody>
+        <tr *ngFor="let etudiant of etudiants">
+            <td>{{etudiant.nom}} {{etudiant.prenom}}</td>
+            <td>{{etudiant.rue}} {{etudiant.cp}} {{etudiant.ville}}</td>
+            <td>{{etudiant.courriel}}</td>
+        </tr>
+    </tbody>
+</table>
+<div class="card">
+    <app-form-etudiant></app-form-etudiant>
+</div>
